@@ -1,8 +1,10 @@
+
+/*:::LARGE CONTAINERS:::*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
 }
 
 body {
@@ -21,6 +23,14 @@ body {
     border-width: 5pt;
 }
 
+.leftCol {
+}
+
+.rightCol {
+}
+
+
+/*:::ELEMENT CONTAINERS:::*/
 
 .headerBox {
     padding: 20px;
@@ -28,9 +38,55 @@ body {
     border-style: groove;
     border-color: rgb(188, 209, 255);
     border-width: 5pt;
-    margin: 5pt;
-    
+    margin: 5pt; 
 }
+
+.navBar {
+    float: right;
+    position: relative;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+
+.hero {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    padding-top: 25px;
+    background-image: url("../images/robot-arm.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.asideBox {
+    float: right;
+    width: 800px;
+    height: auto;
+    background-color: hsla(120, 50%, 10%, 0.8);
+    z-index: 2;
+    padding: 1% 5% 5% 5%;
+    margin: 3%;
+}
+
+.sectionBox {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding: 50px;
+    height: 400px;
+    width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsla(240, 37%, 28%, 0.664);
+    color: #ffffff;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+
+/*:::TYPOGRAPHY:::*/
 
 .logoText {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -39,13 +95,6 @@ body {
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.navBar {
-    float: right;
-    position: relative;
-    margin-right: 5px;
-    padding-bottom: 10px;
 }
 
 .navText {
@@ -67,64 +116,6 @@ body {
     float: inline-end;
     width: auto;
     font-style: oblique;
-}
-
-.navText:hover {
-    color: green;
-}
-
-.hero {
-    margin-bottom: 25px;
-    margin-top: 5px;
-    padding-top: 25px;
-    background-image: url("../images/robot-arm.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-.float-left {
-    float: left;
-    max-width: 200px;
-    margin-left: 25px;
-    
-}
-
-.float-right {
-    float: right;
-    max-width: 200px;
-    margin-left: 25px;
-}
-
-/*
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-*/
-
-.asideBox {
-    float: right;
-    width: 800px;
-    height: auto;
-    background-color: hsla(120, 50%, 10%, 0.8);
-    z-index: 2;
-    padding: 1% 5% 5% 5%;
-    margin: 3%;
-
 }
 
 .asideHeader {
@@ -151,6 +142,17 @@ body {
     font-family: 'Blinker', sans-serif;
 }
 
+.footer h2 {
+    font-size: 20px;
+}
+
+
+/*:::LAYOUT AND DYNAMICS:::*/
+
+.navText:hover {
+    color: green;
+}
+
 .asideImg {
     display: block;
     height: 30%;
@@ -161,7 +163,37 @@ body {
     padding: 0px;
 }
 
-/*
+.float-left {
+    float: left;
+    max-width: 200px;
+    margin-left: 25px;
+}
+
+.float-right {
+    float: right;
+    max-width: 200px;
+    margin-left: 25px;
+}
+
+
+/*:::REFACTORED PARAMETERS:::
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -208,18 +240,6 @@ body {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-*/
-
-.sectionBox {
-    margin-bottom: 20px;
-    margin-left: 50px;
-    padding: 50px;
-    height: 400px;
-    width: 500px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: hsla(240, 37%, 28%, 0.664);
-    color: #ffffff;
 }
     
 .search-engine-optimization {
@@ -276,13 +296,4 @@ body {
     font-size: 36px;
 }
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
-}
+*/
