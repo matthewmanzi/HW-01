@@ -21,12 +21,23 @@ body {
     border-style: groove;
     border-color: rgb(188, 209, 255);
     border-width: 5pt;
+    
 }
 
 .leftCol {
+ 
+    height: auto;
 }
 
 .rightCol {
+}
+
+.rowProp {
+    background-color: hsla(120, 50%, 10%, 0.8);
+    margin-top:5%;
+    padding: 10px;
+   
+  
 }
 
 
@@ -59,7 +70,7 @@ body {
 
 .asideBox {
     float: right;
-    width: 800px;
+    width: auto;
     height: auto;
     background-color: hsla(120, 50%, 10%, 0.8);
     z-index: 2;
@@ -142,6 +153,14 @@ body {
     font-family: 'Blinker', sans-serif;
 }
 
+.sectionText {
+    color: hsla(120, 5%, 80%, 1);
+    font-size: 18px;
+    width: auto;
+    font-family: 'Blinker', sans-serif;
+}
+
+
 .footer h2 {
     font-size: 20px;
 }
@@ -165,15 +184,21 @@ body {
 
 .float-left {
     float: left;
-    max-width: 200px;
-    margin-left: 25px;
+    max-width: 100%;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 
 .float-right {
     float: right;
-    max-width: 200px;
-    margin-left: 25px;
+    max-width: 100%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+
+.headerFix {
+    margin-top: 100%;
 }
+
 
 
 /*:::REFACTORED PARAMETERS:::
